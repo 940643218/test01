@@ -1,0 +1,22 @@
+#encoding=utf-8
+from selenium import webdriver
+import time 
+print("hello world!")
+driver=webdriver.Chrome()
+driver.get("https://www.baidu.com")
+time.sleep(2)
+# driver.get("https://www.hao123.com")
+# time.sleep(5)
+# driver.back()
+# time.sleep(3)
+# driver.forward()
+# driver.set_window_size(720,1080)
+# time.sleep(2)
+# driver.maximize_window()
+# driver.get_screenshot_as_file("D:\\test\\b2.png")
+# driver.quit()
+# driver.find_element_by_link_text("hao123").click()
+# driver.find_element_by_xpath("//*[id,'kw']").send_keys("python")
+# driver.find_element_by_xpath("//input[@type='submit']").click()
+driver.find_element_by_css_selector(".s_ipt").send_keys("python")
+driver.find_element_by_xpath("//span[@class='bg s_btn_wr']/input").click()
